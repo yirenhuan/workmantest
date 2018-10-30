@@ -1,0 +1,27 @@
+2018-09-18 09:32:18 pid:1 Worker process terminated with ERROR: E_ERROR "Call to a member function send() on null in E:\workerman\index.php on line 22"
+2018-09-18 09:36:52 pid:1 Worker process terminated with ERROR: E_ERROR "Call to a member function send() on null in E:\workerman\index.php on line 22"
+2018-09-18 09:38:22 pid:1 Worker process terminated with ERROR: E_ERROR "Call to a member function send() on null in E:\workerman\index.php on line 22"
+2018-09-18 09:40:34 pid:1 Worker process terminated with ERROR: E_ERROR "Call to a member function send() on null in E:\workerman\index.php on line 22"
+2018-09-18 09:41:38 pid:1 Worker process terminated with ERROR: E_ERROR "Call to a member function send() on null in E:\workerman\index.php on line 27"
+2018-09-18 09:44:03 pid:1 Worker process terminated with ERROR: E_ERROR "Call to a member function send() on null in E:\workerman\index.php on line 20"
+2018-09-18 09:44:50 pid:1 Worker process terminated with ERROR: E_ERROR "Call to a member function send() on null in E:\workerman\index.php on line 20"
+2018-09-18 09:47:06 pid:1 Worker process terminated with ERROR: E_ERROR "Call to a member function send() on null in E:\workerman\index.php on line 22"
+2018-09-18 10:15:28 pid:1 Worker process terminated with ERROR: E_ERROR "Call to a member function send() on null in E:\workerman\index.php on line 19"
+2018-09-18 10:19:16 pid:1 Worker process terminated with ERROR: E_ERROR "Call to a member function send() on null in E:\workerman\index.php on line 20"
+2018-09-19 03:54:42 pid:1 Worker process terminated with ERROR: E_COMPILE_ERROR "require_once(): Failed opening required '../Workerman/Autoloader.php' (include_path='.;C:\php\pear') in E:\workerman\test\index.php on line 3"
+2018-09-19 06:47:38 pid:1 exception 'Exception' with message 'You can't send(NULL) to client, you need to convert it to a string. ' in E:\workerman\core\Protocols\Websocket.php:236
+Stack trace:
+#0 E:\workerman\core\Connection\TcpConnection.php(336): Workerman\Protocols\Websocket::encode(NULL, Object(Workerman\Connection\TcpConnection))
+#1 E:\workerman\test\index.php(65): Workerman\Connection\TcpConnection->send(NULL)
+#2 E:\workerman\test\index.php(43): sendMessageByUid('111', NULL)
+#3 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), '111')
+#4 E:\workerman\core\Connection\TcpConnection.php(650): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), '111')
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #20)
+#6 E:\workerman\core\Events\Select.php(295): call_user_func_array(Array, Array)
+#7 E:\workerman\core\Worker.php(2321): Workerman\Events\Select->loop()
+#8 E:\workerman\core\Worker.php(1314): Workerman\Worker->run()
+#9 E:\workerman\core\Worker.php(1257): Workerman\Worker::forkWorkersForWindows()
+#10 E:\workerman\core\Worker.php(506): Workerman\Worker::forkWorkers()
+#11 E:\workerman\test\index.php(70): Workerman\Worker::runAll()
+#12 {main}
+2018-09-19 06:47:38 pid:1 Worker process terminated
